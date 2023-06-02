@@ -1,0 +1,118 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login {
+  width: 40%;
+  background-color: #f5f5f5;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 0 0 25px #00000062;
+}
+
+.login span {
+  font-weight: bold;
+  display: block;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.login input[type=email] {
+  background: #fff url(../images/icon-email.png) no-repeat center left 10px;
+}
+
+.login input[type=password] {
+  background: #fff url(../images/icon-lock.png) no-repeat center left 10px;
+}
+
+.login input[type=email],
+.login input[type=password] {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 45px;
+}
+
+.login input[type=email]:hover,
+.login input[type=password]:hover {
+  box-shadow: 0 0 5px#58e235;
+  border: 1px solid #58e235;
+}
+
+.login input[type=email]:focus::placeholder,
+.login input[type=password]:focus::placeholder {
+  visibility: hidden;
+}
+
+.login p {
+  overflow: hidden;
+}
+.login p label {
+  float: left;
+  cursor: pointer;
+}
+.login p a {
+  float: right;
+  color: #4b8d3a;
+}
+
+.login p a:hover {
+  text-decoration: underline;
+}
+
+input[type=checkbox] {
+  float: left;
+}
+
+.login button {
+  background-color: #44b129;
+  color: #fff;
+  width: 250px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+}
+.login button:hover {
+  background-color: #40922c;
+}
+
+@media screen and (max-width: 1000px) {
+  .login {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .login p label {
+    float: right;
+  }
+  .login button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .login {
+    width: 80%;
+  }
+}
